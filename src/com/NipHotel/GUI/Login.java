@@ -55,6 +55,7 @@ public class Login {
     public static void main(String[] args) {
 
         EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
 			/*	try {
 		            //设置外观
@@ -78,7 +79,7 @@ public class Login {
 */
                 try {
 //                    UIManager.setLookAndFeel("com.jtattoo.plaf.mcwin.McWinLookAndFeel");
-                    UIManager.setLookAndFeel("org.jvnet.substance.skin.SubstanceCremeLookAndFeel");
+                    UIManager.setLookAndFeel("org.jvnet.substance.skin.SubstanceMistAquaLookAndFeel");
 
                     //SubstanceLookAndFeel.setCurrentTitlePainter(new FlatBorderPainter());
                 } catch (ClassNotFoundException e1) {
@@ -122,7 +123,7 @@ public class Login {
         frame.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\NI\\Desktop\\logo.jpg"));
         frame.setResizable(false);
         TimeActionListener t = new TimeActionListener();
-        frame.setTitle("闻闻的旅馆 - 酒店管理系统");
+        frame.setTitle("❤❤旅馆");
         frame.setBounds(100, 100, 728, 533);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLocationRelativeTo(null);
@@ -280,12 +281,12 @@ public class Login {
         rbtStaff = new JRadioButton("工作人员");
         rbtStaff.setSelected(true);
         rbtStaff.setBackground(new Color(245, 222, 179));
-        rbtStaff.setBounds(22, 282, 73, 23);
+        rbtStaff.setBounds(22, 282, 95, 23);
         pRight.add(rbtStaff);
 
         rbtAdmin = new JRadioButton("管理员");
         rbtAdmin.setBackground(new Color(245, 222, 179));
-        rbtAdmin.setBounds(145, 282, 61, 23);
+        rbtAdmin.setBounds(145, 282, 95, 23);
         pRight.add(rbtAdmin);
         //实现单选
         button = new ButtonGroup();
@@ -302,8 +303,8 @@ public class Login {
 
     /**
      * 计数器  时间每秒更新一次
-     * @author Nippppp
      *
+     * @author Nippppp
      */
     class TimeActionListener implements ActionListener {
         public TimeActionListener() {
