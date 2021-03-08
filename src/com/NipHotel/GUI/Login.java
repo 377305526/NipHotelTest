@@ -55,6 +55,7 @@ public class Login {
     public static void main(String[] args) {
 
         EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
 			/*	try {
 		            //设置外观
@@ -302,8 +303,8 @@ public class Login {
 
     /**
      * 计数器  时间每秒更新一次
-     * @author Nippppp
      *
+     * @author Nippppp
      */
     class TimeActionListener implements ActionListener {
         public TimeActionListener() {
